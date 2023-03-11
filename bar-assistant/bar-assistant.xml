@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Bar-Assistant-Server</Name>
+  <Repository>kmikus12/bar-assistant-server</Repository>
+  <Registry>https://hub.docker.com/r/kmikus12/bar-assistant-server</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project>https://github.com/karlomikus/bar-assistant</Project>
+  <Overview/>
+  <Category>Productivity: Status:Beta</Category>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://i.imgur.com/2pFt2th.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1678553808</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="App URL" Target="APP_URL" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">http://localhost:8000</Config>
+  <Config Name="Meilisearch Host" Target="MEILISEARCH_HOST" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">http://localhost:7700</Config>
+  <Config Name="Meilisearch Master Key" Target="MEILISEARCH_KEY" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="true"/>
+  <Config Name="Redis Host" Target="REDIS_HOST" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="Port" Target="80" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">8000</Config>
+  <Config Name="Appdata Config" Target="/var/www/cocktails/storage/bar-assistant" Default="" Mode="rw" Description="" Type="Path" Display="advanced-hide" Required="true" Mask="false">/mnt/user/appdata/bar-assistant</Config>
+</Container>
