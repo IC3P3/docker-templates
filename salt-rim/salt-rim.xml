@@ -23,4 +23,5 @@
   <Requires/>
   <Config Name="Bar-Assistant Host" Target="API_URL" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">http://localhost:8000</Config>
   <Config Name="Meilisearch Host" Target="MEILISEARCH_URL" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">http://localhost:7700</Config>
+  <Config Name="Port" Target="8080" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">8080</Config>
 </Container>
