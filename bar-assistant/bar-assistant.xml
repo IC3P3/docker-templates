@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>Bar-Assistant-Server</Name>
-  <Repository>kmikus12/bar-assistant-server</Repository>
+  <Repository>barassistant/server</Repository>
   <Registry>https://hub.docker.com/r/kmikus12/bar-assistant-server</Registry>
   <Network>bridge</Network>
   <MyIP/>
@@ -17,16 +17,16 @@
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1678557357</DateInstalled>
+  <DateInstalled>1678558806</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
   <Config Name="App URL" Target="APP_URL" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">http://localhost:8000</Config>
-  <Config Name="Meilisearch Host" Target="MEILISEARCH_HOST" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">http://localhost:7700</Config>
+  <Config Name="Meilisearch Host" Target="MEILISEARCH_HOST" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">http://locahost:7700</Config>
   <Config Name="Meilisearch Master Key" Target="MEILISEARCH_KEY" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="true"/>
-  <Config Name="Redis Host" Target="REDIS_HOST" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="Redis Host" Target="REDIS_HOST" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">http://localhost:6379</Config>
   <Config Name="Redis Password" Target="REDIS_PASSWORD" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="true"/>
   <Config Name="Port" Target="80" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">8000</Config>
-  <Config Name="Allow Registration" Target="ALLOW_REGISTRATION" Default="true|false" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">true</Config>
+  <Config Name="Allow Registration" Target="ALLOW_REGISTRATION" Default="true|false" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">false</Config>
   <Config Name="Appdata Config" Target="/var/www/cocktails/storage/bar-assistant" Default="" Mode="rw" Description="" Type="Path" Display="advanced-hide" Required="true" Mask="false">/mnt/user/appdata/bar-assistant</Config>
 </Container>
