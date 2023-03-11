@@ -17,7 +17,7 @@
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1678553808</DateInstalled>
+  <DateInstalled>1678557357</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
@@ -25,6 +25,8 @@
   <Config Name="Meilisearch Host" Target="MEILISEARCH_HOST" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">http://localhost:7700</Config>
   <Config Name="Meilisearch Master Key" Target="MEILISEARCH_KEY" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="true"/>
   <Config Name="Redis Host" Target="REDIS_HOST" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="Redis Password" Target="REDIS_PASSWORD" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="true"/>
   <Config Name="Port" Target="80" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">8000</Config>
+  <Config Name="Allow Registration" Target="ALLOW_REGISTRATION" Default="true|false" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">true</Config>
   <Config Name="Appdata Config" Target="/var/www/cocktails/storage/bar-assistant" Default="" Mode="rw" Description="" Type="Path" Display="advanced-hide" Required="true" Mask="false">/mnt/user/appdata/bar-assistant</Config>
 </Container>
